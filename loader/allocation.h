@@ -33,7 +33,7 @@
 
 void *loader_instance_heap_alloc(const struct loader_instance *instance, size_t size, VkSystemAllocationScope allocation_scope);
 void *loader_instance_heap_calloc(const struct loader_instance *instance, size_t size, VkSystemAllocationScope allocation_scope);
-void loader_instance_heap_free(const struct loader_instance *instance, void *pMemory);
+LOADER_EXPORT void loader_instance_heap_free(const struct loader_instance *instance, void *pMemory);
 void *loader_instance_heap_realloc(const struct loader_instance *instance, void *pMemory, size_t orig_size, size_t size,
                                    VkSystemAllocationScope allocation_scope);
 
